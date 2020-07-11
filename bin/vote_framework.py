@@ -17,12 +17,9 @@ import time
 
 # VOTE object
 class Vote:
-    VOTER_ID = ""
-    LASTNAME = ""
-    FIRSTNAME = ""
-    VOTE = []
-    TIMESTAMP = null
-
-class encryptedVote:
-    VALUE = null
-    TIMESTAMP = ""
+    def __init__(voter,VOTER_PIN,LASTNAME,FIRSTNAME,VOTE,TIMESTAMP)
+    voter.VOTER_PIN = VOTER_PIN
+    voter.LASTNAME = LASTNAME
+    voter.FIRSTNAME = FIRSTNAME
+    voter.VOTE = VOTE
+    voter.TIMESTAMP = TIMESTAMP
