@@ -12,8 +12,9 @@
 
 # Class object
 class Vote:
-    VOTER_PIN = null
-    LASTNAME = null
-    FIRSTNAME = null
-    VOTE = null
-    TIMESTAMP = null
+    def __init__(voter,VOTER_PIN,LASTNAME,FIRSTNAME,VOTE,TIMESTAMP)
+    voter.VOTER_PIN = VOTER_PIN
+    voter.LASTNAME = LASTNAME
+    voter.FIRSTNAME = FIRSTNAME
+    voter.VOTE = VOTE
+    voter.TIMESTAMP = TIMESTAMP
