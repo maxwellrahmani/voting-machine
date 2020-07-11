@@ -15,52 +15,58 @@ import voter_framework.py
 import time
 
 voter = Vote("","","","","")
-while Continue == True:
 
-    # Will dispay info to the user about about whatever
-    def displayInfo():
-        print(voter)
+# Will dispay info to the user about about whatever
+def displayInfo():
+    print(voter)
 
     # Gets the voter ID and PIN from the user
-    def getVoterCreds():
-        # cross reference input with the database of voterIDs for validation
-        try:
-                first,last = input("Who are you? enter name").split()
-                #do we reference input before adding to voter object?
+def getVoterCreds():
 
-            pass
-                voter.FIRSTNAME = first
-                voter.LASTNAME = last
-                pin = input("What is your pin?")
-                voter.PIN = pin
-                voteCast()
-        except Exception as e:
-            raise
-                print("Not a valid info")
+    try:
+            first,last = input("Who are you? enter name").split()
+            pin = input("What is your pin?")
+            #do we reference input before adding to voter object?
 
+        pass
+            voter.FIRSTNAME = first
+            voter.LASTNAME = last
+            voter.VOTER_PIN = pin
+            voteCast()
+    except Exception as e:
+        raise
+            print("Not a valid info")
 
-
-        print()
+    print()
 
     # Prompts the user for their vote
-    def voteCast():
+def voteCast():
         # this can change when you are allowed to create custom voting practices
         # TODO: need a dynamic way to allow more than 5 votes
-        choice = Vote_choice("","")
-        ranking = [1,2,3,4,5]
+            # can use a JSON to handle some basic settings like this
+            # inluding number of things you are choosing from, their names etc
+        #choice = Vote_choice("","")
+
+    options = []
+    ranking = [1,2,3,4,5]
+    usrVote = []
+
+    print("You will be ranking the following:" + options)
+
+    # Will probably need to break the stuff below out into its own function that accepts an integer
+    # error checking on this line
+
+    usrChoice1 = 0
+    for x in options:
+        while usrChoice1 not in options:
+            usrChoice1 = input("Please rank" + x + ":")
+        options.remove(usrChoice1)
+        usrVote.append(usrChoice1)
+
+    officialVote = usrVote
+
         #need prompt listed votes Casted
         # need to have a list of items and a list of vote rankings
-        #vote = input("place votes" + items + vote)
-        voting = input("what rank is " + ranking + " is blue") #testing need to change to items
-        try:
-            for c in ranking:
-                if voting == c
-                # break loop else continue loop
-                break
-            pass
-                voter.VOTE = voting
-                voter.timestamp = time.time()
-            # need to save the result
-        except Exception as e:
-            raise
-                print("not valid vote")
+        #vote = input("place votes" + items + vote) here need to know how ranking is gonna be taken
+
+    voter.TIMESTAMP = time.ctime(time.time())
