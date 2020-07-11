@@ -10,7 +10,12 @@
 
 # ----------------------------------------------------------------- #
 
-# Class object
+
+# Imports
+import time
+
+
+# VOTE object
 class Vote:
     def __init__(voter,VOTER_PIN,LASTNAME,FIRSTNAME,VOTE,TIMESTAMP)
     voter.VOTER_PIN = VOTER_PIN
