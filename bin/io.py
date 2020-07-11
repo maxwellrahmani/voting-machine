@@ -12,13 +12,14 @@
 
 # Imports ----------
 import voter_framework.py
+import time
 
 voter = Vote("","","","","")
 while Continue == True:
 
     # Will dispay info to the user about about whatever
     def displayInfo():
-        print()
+        print(voter)
 
     # Gets the voter ID and PIN from the user
     def getVoterCreds():
@@ -26,11 +27,12 @@ while Continue == True:
         try:
                 first,last = input("Who are you? enter name").split()
                 #do we reference input before adding to voter object?
+
+            pass
                 voter.FIRSTNAME = first
                 voter.LASTNAME = last
                 pin = input("What is your pin?")
                 voter.PIN = pin
-            pass
                 voteCast()
         except Exception as e:
             raise
@@ -56,6 +58,8 @@ while Continue == True:
                 # break loop else continue loop
                 break
             pass
+                voter.VOTE = voting
+                voter.timestamp = time.time()
             # need to save the result
         except Exception as e:
             raise
