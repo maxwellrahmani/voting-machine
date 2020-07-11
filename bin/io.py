@@ -25,7 +25,10 @@ while Continue == True:
         # cross reference input with the database of voterIDs for validation
         try:
                 first,last = input("Who are you? enter name").split()
+<<<<<<< HEAD
                 #do we reference input before adding to voter object?
+=======
+>>>>>>> b98a085b51ece09bae35a0aab4889cad5ff98ebe
                 voter.FIRSTNAME = first
                 voter.LASTNAME = last
                 pin = input("What is your pin?")
@@ -44,17 +47,24 @@ while Continue == True:
     def voteCast():
         # this can change when you are allowed to create custom voting practices
         # TODO: need a dynamic way to allow more than 5 votes
+<<<<<<< HEAD
         choice = Vote_choice("","")
+=======
+>>>>>>> b98a085b51ece09bae35a0aab4889cad5ff98ebe
         ranking = [1,2,3,4,5]
         #need prompt listed votes Casted
         # need to have a list of items and a list of vote rankings
         #vote = input("place votes" + items + vote)
         voting = input("what rank is " + ranking + " is blue") #testing need to change to items
         try:
+<<<<<<< HEAD
             for c in ranking:
                 if voting == c
                 # break loop else continue loop
                 break
+=======
+
+>>>>>>> b98a085b51ece09bae35a0aab4889cad5ff98ebe
             pass
             # need to save the result
         except Exception as e:

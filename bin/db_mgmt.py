@@ -24,13 +24,6 @@ def submitToDB(Vote v):
     ev = encryptVote(v)
     appendVote(ev)
 
-# Ensures appropriate files exist
-def fileCheck():
-
-
-    # check if file exists # do Nothin # if false then # write vote and keys file
-    return val
-
 # Appends a vote to the 'votes.csv' file
 def appendVote(encryptedVote ev):
     to_write = [ev.ID, ev.VALUE, ev.TIMESTAMP]
