@@ -17,10 +17,11 @@ import time
 
 # VOTE object
 class Vote:
-    def __init__(voter,VOTER_PIN,LASTNAME,FIRSTNAME,VOTE,TIMESTAMP)
+    def __init__(voter,FIRSTNAME,LASTNAME,VOTER_PIN,TIMESTAMP,VOTE)
     voter.VOTER_PIN = VOTER_PIN
     voter.LASTNAME = LASTNAME
     voter.FIRSTNAME = FIRSTNAME
+#VOTE needs to change to a list
     voter.VOTE = VOTE
     voter.TIMESTAMP = TIMESTAMP
 

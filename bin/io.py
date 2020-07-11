@@ -13,7 +13,7 @@
 # Imports ----------
 import voter_framework.py
 
-voter = voter_framework.VOTE
+voter = Vote("","","","","")
 while Continue == True:
 
     # Will dispay info to the user about about whatever
@@ -24,9 +24,16 @@ while Continue == True:
     def getVoterCreds():
         # cross reference input with the database of voterIDs for validation
         try:
+                first,last = input("Who are you? enter name").split()
+                voter.FIRSTNAME = first
+                voter.LASTNAME = last
+                pin = input("What is your pin?")
+                voter.PIN = pin
             pass
+                voteCast()
         except Exception as e:
             raise
+                print("Not a valid info")
 
 
 
@@ -34,12 +41,15 @@ while Continue == True:
 
     # Prompts the user for their vote
     def voteCast():
+        # this can change when you are allowed to create custom voting practices
+        # TODO: need a dynamic way to allow more than 5 votes
+        ranking = [1,2,3,4,5]
         #need prompt listed votes Casted
-        first,last = input("Who are you? enter name").split()
-
-        vote = input("please press enter to confirm votes")
+        # need to have a list of items and a list of vote rankings
+        #vote = input("place votes" + items + vote)
+        voting = input("what rank is " + ranking + " is blue") #testing need to change to items
         try:
-            if
+
             pass
         except Exception as e:
             raise
