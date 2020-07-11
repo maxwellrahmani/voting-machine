@@ -31,9 +31,3 @@ class EV:
     ev.ID = ID
     ev.VALUE = VALUE
     ev.TIMESTAMP = TIMESTAMP
-
-#made this since I did not know how to do list pairs
-class Vote_choice:
-    def __init__(choice,rank,item)
-    choice.rank = rank
-    choice.item = item
