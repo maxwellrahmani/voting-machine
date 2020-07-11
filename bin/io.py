@@ -13,9 +13,9 @@
 # Imports ----------
 import voter_framework.py
 
-
+voter = voter_framework.VOTE
 while Continue == True:
-    
+
     # Will dispay info to the user about about whatever
     def displayInfo():
         print()
@@ -34,5 +34,16 @@ while Continue == True:
 
     # Prompts the user for their vote
     def voteCast():
+        #need prompt listed votes Casted
+        first,last = input("Who are you? enter name").split()
+
+        vote = input("please press enter to confirm votes")
+        try:
+            if
+            pass
+        except Exception as e:
+            raise
+        else:
+            pass
 
     #
