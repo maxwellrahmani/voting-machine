@@ -17,8 +17,8 @@ import time
 
 # VOTE object
 class Vote:
-    def __init__(voter,VOTER_PIN,LASTNAME,FIRSTNAME,VOTE,TIMESTAMP)
-    voter.VOTER_PIN = VOTER_PIN
+    def __init__(voter,VOTER_ID,LASTNAME,FIRSTNAME,VOTE,TIMESTAMP)
+    voter.VOTER_ID = VOTER_ID
     voter.LASTNAME = LASTNAME
     voter.FIRSTNAME = FIRSTNAME
     voter.VOTE = VOTE
