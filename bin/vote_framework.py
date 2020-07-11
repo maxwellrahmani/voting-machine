@@ -23,3 +23,10 @@ class Vote:
     voter.FIRSTNAME = FIRSTNAME
     voter.VOTE = VOTE
     voter.TIMESTAMP = TIMESTAMP
+
+# ENCTRYPTED VOTE Object
+class EV:
+    def __init__(ev, ID, VALUE, TIMESTAMP)
+    ev.ID = ID
+    ev.VALUE = VALUE
+    ev.TIMESTAMP = TIMESTAMP
