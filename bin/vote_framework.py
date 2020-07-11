@@ -10,10 +10,19 @@
 
 # ----------------------------------------------------------------- #
 
-# Class object
+
+# Imports
+import time
+
+
+# VOTE object
 class Vote:
-    VOTER_PIN = null
-    LASTNAME = null
-    FIRSTNAME = null
-    VOTE = null
+    VOTER_ID = ""
+    LASTNAME = ""
+    FIRSTNAME = ""
+    VOTE = []
     TIMESTAMP = null
+
+class encryptedVote:
+    VALUE = null
+    TIMESTAMP = ""
