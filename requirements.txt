@@ -1,0 +1,2 @@
+# format is indicated below this line. REMOVE THIS LINE BEFORE USING
+packagename == version.number.
