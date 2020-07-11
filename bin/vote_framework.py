@@ -22,5 +22,12 @@ class Vote:
     voter.LASTNAME = LASTNAME
     voter.FIRSTNAME = FIRSTNAME
 #VOTE needs to change to a list
+# TODO: find list pairs or change to Vote_choice Object
     voter.VOTE = VOTE
     voter.TIMESTAMP = TIMESTAMP
+
+#made this since I did not know how to do list pairs
+class Vote_choice:
+    def __init__(choice,rank,item)
+    choice.rank = rank
+    choice.item = item
